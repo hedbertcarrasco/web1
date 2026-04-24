@@ -43,7 +43,7 @@ export default function OpengraphImage() {
             }}
           />
         </div>
-        <span style={{ fontSize: 32, fontWeight: 600, letterSpacing: -0.5 }}>lumynar.</span>
+        <span style={{ fontSize: 32, fontWeight: 600, letterSpacing: -0.5 }}>Lumynar.</span>
       </div>
 
       <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>

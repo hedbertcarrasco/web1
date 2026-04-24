@@ -36,7 +36,4 @@ export const technologies = [
   { name: "IBM Network Management", group: "Observabilidad de red" },
   { name: "AWS", group: "Nube" },
   { name: "Azure", group: "Nube" },
-  { name: "BGP · OSPF", group: "Enrutamiento" },
-  { name: "IPSec · SSL VPN", group: "Conectividad" },
-  { name: "CIS Controls", group: "Compliance" },
 ] as const;

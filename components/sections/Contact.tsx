@@ -1,4 +1,3 @@
-import { Badge, LiveDot } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { site } from "@/lib/site-config";
 import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
@@ -9,7 +8,7 @@ export function Contact() {
   )}`;
 
   return (
-    <section id="contacto" className="relative py-24 md:py-32">
+    <section id="contacto" className="relative py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="relative overflow-hidden rounded-3xl border border-[color:var(--color-accent)]/25 bg-gradient-to-br from-[color:var(--color-surface)] via-[color:var(--color-surface-2)] to-[color:var(--color-surface)] p-8 md:p-16">
           <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[color:var(--color-accent)]/15 blur-3xl" />
@@ -17,10 +16,6 @@ export function Contact() {
 
           <div className="relative grid gap-10 md:grid-cols-2 md:gap-16">
             <div>
-              <Badge className="mb-5">
-                <LiveDot />
-                <span>Respondemos dentro de 48 h</span>
-              </Badge>
               <h2 className="mb-4 text-balance text-3xl font-semibold tracking-tight md:text-5xl">
                 Cuéntanos el <span className="text-[color:var(--color-accent)]">escenario</span> y
                 conversamos.

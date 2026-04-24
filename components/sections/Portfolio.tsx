@@ -23,8 +23,8 @@ export function Portfolio() {
       id="portafolio"
       className="relative border-y border-[color:var(--color-border)] bg-[color:var(--color-surface-2)]/30"
     >
-      <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-        <div className="mb-12 flex flex-col gap-4 md:mb-16">
+      <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <div className="mb-10 flex flex-col gap-4 md:mb-12">
           <Badge>Especialización · IBM Network Management</Badge>
           <h2 className="max-w-3xl text-balance text-3xl font-semibold tracking-tight md:text-5xl">
             Observabilidad de red con{" "}
@@ -85,7 +85,7 @@ export function Portfolio() {
           </article>
         </div>
 
-        <div className="mt-12 rounded-2xl border border-[color:var(--color-border)] bg-[color:var(--color-surface)]/60 p-6 md:mt-16 md:p-8">
+        <div className="mt-10 rounded-2xl border border-[color:var(--color-border)] bg-[color:var(--color-surface)]/60 p-6 md:mt-12 md:p-8">
           <p className="mb-6 font-mono text-xs uppercase tracking-[0.18em] text-[color:var(--color-text-muted)]">
             Flujo extremo a extremo
           </p>

@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 md:pt-40">
+    <section id="top" className="relative overflow-hidden pt-24 md:pt-32">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-grid mask-fade-b opacity-60" />
         <div className="absolute inset-0 bg-radial-accent" />
@@ -14,7 +14,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl px-6 pb-24 md:pb-36">
+      <div className="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
         <div className="flex flex-col items-start gap-6 md:gap-8">
           <Badge>
             <LiveDot />
@@ -22,7 +22,7 @@ export function Hero() {
             <span className="text-[color:var(--color-text-muted)]">· Redes · Ciberseguridad</span>
           </Badge>
 
-          <h1 className="max-w-4xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
+          <h1 className="max-w-4xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
             Arquitectura y observabilidad de red,{" "}
             <span className="text-[color:var(--color-accent)]">con criterio técnico.</span>
           </h1>
@@ -50,7 +50,7 @@ export function Hero() {
             </Button>
           </div>
 
-          <dl className="mt-10 grid w-full grid-cols-2 gap-6 border-t border-[color:var(--color-border)] pt-8 md:grid-cols-4 md:gap-10">
+          <dl className="mt-8 grid w-full grid-cols-2 gap-6 border-t border-[color:var(--color-border)] pt-8 md:grid-cols-4 md:gap-10">
             <HeroStat k="9+ años" v="Experiencia técnica" />
             <HeroStat k="Multi-vendor" v="Fortinet · Palo Alto · IBM" />
             <HeroStat k="End-to-end" v="Diseño → operación" />
