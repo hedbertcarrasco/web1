@@ -1,37 +1,37 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
-import { Activity, BookOpen, GraduationCap, Radar, Shield, Workflow } from "lucide-react";
+import { Activity, Cable, Cloud, Network, Shield, Sliders } from "lucide-react";
 
 const services = [
   {
-    icon: Radar,
-    title: "Observabilidad de red",
-    desc: "Instrumentación de infraestructura multivendor, visibilidad end-to-end y correlación de performance con experiencia de aplicación.",
-  },
-  {
-    icon: Activity,
-    title: "Implementación IBM SevOne NPM",
-    desc: "Deployments y upgrades de SevOne NPM 7.2, modelamiento de inventario, dashboards y alertas operacionales listas para NetOps.",
+    icon: Network,
+    title: "Arquitectura y diseño de red",
+    desc: "Topologías LAN/WAN/DC, enrutamiento dinámico (BGP, OSPF), alta disponibilidad local y geográfica. Diseños documentados en HLD listos para implementación.",
   },
   {
     icon: Shield,
-    title: "NOC 24/7 gestionado",
-    desc: "Operación continua con SLA, detección proactiva, triage y coordinación con tus equipos on-call para cerrar incidentes más rápido.",
+    title: "Seguridad perimetral (NGFW)",
+    desc: "Diseño e implementación de Fortinet y Palo Alto: políticas, segmentación, IPS, filtrado web. Hardening alineado con CIS Controls.",
   },
   {
-    icon: BookOpen,
-    title: "Consultoría NetOps",
-    desc: "Assessment de madurez, diseño de arquitectura de telemetría, definición de KPIs y runbooks para capacidad y disponibilidad.",
+    icon: Cable,
+    title: "VPN y conectividad híbrida",
+    desc: "VPN sitio a sitio y acceso remoto (IPSec, SSL), interconexión con AWS y Azure, publicación segura de servicios, gestión de HA.",
   },
   {
-    icon: Workflow,
-    title: "Automatización con SANO",
-    desc: "IBM SevOne Automated Network Observability + Rapid Infrastructure Automation: de insights a acciones en producción.",
+    icon: Activity,
+    title: "Observabilidad de red",
+    desc: "Especialización en IBM SevOne NPM y el portafolio IBM Network Management. Casos de uso de visibilidad multivendor y telemetría correlacionada.",
   },
   {
-    icon: GraduationCap,
-    title: "Enablement y capacitación",
-    desc: "Transferencia de conocimiento hands-on para tus ingenieros de red y equipos de operaciones, con casos reales.",
+    icon: Sliders,
+    title: "Endpoint y detección",
+    desc: "EDR/XDR en producción (Cortex XDR), definición de casos de uso, acompañamiento de respuesta a incidentes y ajuste continuo de detecciones.",
+  },
+  {
+    icon: Cloud,
+    title: "Asesoría y preventa",
+    desc: "Assessments de seguridad, Discovery, PoV/PoC, HLD y soporte RFP/RFI. Traducimos requisitos de negocio en arquitecturas técnicas viables.",
   },
 ];
 
@@ -42,11 +42,11 @@ export function Services() {
       eyebrow="Servicios"
       title={
         <>
-          Seis capacidades que cubren todo el{" "}
-          <span className="text-[color:var(--color-accent)]">lifecycle de observabilidad</span>.
+          Seis capacidades para proyectos de{" "}
+          <span className="text-[color:var(--color-accent)]">red y seguridad</span>.
         </>
       }
-      description="Desde el primer assessment hasta la operación continua, acompañamos a equipos NetOps de enterprise, telco y MSPs."
+      description="Cubrimos el ciclo completo — desde el assessment y el diseño hasta la implementación y el acompañamiento en operación."
     >
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {services.map(({ icon: Icon, title, desc }) => (

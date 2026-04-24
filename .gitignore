@@ -27,3 +27,8 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# personal/local files (CV, drafts, etc.)
+*.pdf
+*.docx
+.tmp-*

@@ -1,8 +1,10 @@
 import { Logo } from "@/components/brand/Logo";
 import { navLinks, site } from "@/lib/site-config";
-import { Linkedin, Mail } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 
 export function Footer() {
+  const waHref = `https://wa.me/${site.whatsapp}`;
+
   return (
     <footer className="relative border-t border-[color:var(--color-border)] bg-[color:var(--color-surface)]/40">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-14 md:flex-row md:justify-between">
@@ -20,13 +22,13 @@ export function Footer() {
               <Mail className="h-4 w-4" />
             </a>
             <a
-              href={site.linkedin}
+              href={waHref}
               target="_blank"
               rel="noreferrer"
-              aria-label="LinkedIn"
+              aria-label="WhatsApp"
               className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[color:var(--color-border)] text-[color:var(--color-text-muted)] transition-colors hover:border-[color:var(--color-accent)] hover:text-[color:var(--color-accent)]"
             >
-              <Linkedin className="h-4 w-4" />
+              <MessageCircle className="h-4 w-4" />
             </a>
           </div>
         </div>
@@ -61,6 +63,11 @@ export function Footer() {
                   {site.email}
                 </a>
               </li>
+              <li>
+                <a href={waHref} className="hover:text-[color:var(--color-accent)]">
+                  {site.phone}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -70,7 +77,9 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {site.legalName}. Todos los derechos reservados.
           </p>
-          <p className="font-mono uppercase tracking-[0.18em]">Partner · IBM Network Management</p>
+          <p className="font-mono uppercase tracking-[0.18em]">
+            Redes · Ciberseguridad · Observabilidad
+          </p>
         </div>
       </div>
     </footer>

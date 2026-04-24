@@ -2,7 +2,7 @@ import { site } from "@/lib/site-config";
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = `${site.name} · Observabilidad de red con IBM SevOne`;
+export const alt = `${site.name} · Consultoría de redes, ciberseguridad y observabilidad`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -56,20 +56,20 @@ export default function OpengraphImage() {
             fontFamily: "JetBrains Mono, monospace",
           }}
         >
-          Observabilidad · IBM Network Management
+          Redes · Ciberseguridad · Observabilidad
         </span>
         <h1
           style={{
-            fontSize: 84,
+            fontSize: 78,
             fontWeight: 600,
             lineHeight: 1.05,
             letterSpacing: -2,
             margin: 0,
           }}
         >
-          Visibilidad total de tu red.
+          Arquitectura y observabilidad
           <br />
-          <span style={{ color: "#00E5C7" }}>Acción antes del problema.</span>
+          <span style={{ color: "#00E5C7" }}>de red, con criterio técnico.</span>
         </h1>
       </div>
 
@@ -84,7 +84,7 @@ export default function OpengraphImage() {
         }}
       >
         <span>lumynar.cl</span>
-        <span>Partner · IBM SevOne NPM · SANO</span>
+        <span>Fortinet · Palo Alto · IBM SevOne · Cortex</span>
       </div>
     </div>,
     { ...size },
