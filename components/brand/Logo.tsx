@@ -21,7 +21,7 @@ export function Logo({ className, withWordmark = true }: Props) {
       </svg>
       {withWordmark && (
         <span className="font-sans text-lg font-semibold tracking-tight">
-          lumynar<span className="text-[color:var(--color-accent)]">.</span>
+          Lumynar<span className="text-[color:var(--color-accent)]">.</span>
         </span>
       )}
     </div>

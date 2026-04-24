@@ -22,11 +22,11 @@ export function Section({
   align = "left",
 }: Props) {
   return (
-    <section id={id} className={cn("relative py-24 md:py-32", className)}>
+    <section id={id} className={cn("relative py-16 md:py-24", className)}>
       <div className="mx-auto max-w-6xl px-6">
         <div
           className={cn(
-            "mb-12 flex flex-col gap-4 md:mb-16",
+            "mb-10 flex flex-col gap-4 md:mb-12",
             align === "center" && "items-center text-center",
           )}
         >

@@ -7,7 +7,7 @@ export function Footer() {
 
   return (
     <footer className="relative border-t border-[color:var(--color-border)] bg-[color:var(--color-surface)]/40">
-      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-14 md:flex-row md:justify-between">
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-12 md:flex-row md:justify-between">
         <div className="flex flex-col gap-4 md:max-w-sm">
           <div className="text-[color:var(--color-accent)]">
             <Logo />
