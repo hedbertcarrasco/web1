@@ -1,6 +1,6 @@
-import { AwsLogo, AzureLogo, IbmLogo } from "@/components/brand/VendorLogos";
 import type { ComponentType } from "react";
 import { SiCisco, SiFortinet, SiPaloaltonetworks, SiVmware } from "react-icons/si";
+import { AwsLogo, AzureLogo, IbmLogo } from "@/components/brand/VendorLogos";
 
 type IconProps = { className?: string };
 type Vendor = { name: string; Icon: ComponentType<IconProps> };
@@ -15,9 +15,16 @@ const vendors: Vendor[] = [
   { name: "VMware", Icon: SiVmware as ComponentType<IconProps> },
 ];
 
-export function VendorsTicker() {
-  const loop = [...vendors, ...vendors];
+function VendorItem({ name, Icon }: Vendor) {
+  return (
+    <li className="flex shrink-0 items-center gap-3 text-[color:var(--color-text-muted)] transition-colors hover:text-[color:var(--color-accent)]">
+      <Icon className="h-8 w-auto" />
+      <span className="font-mono text-sm tracking-wide">{name}</span>
+    </li>
+  );
+}
 
+export function VendorsTicker() {
   return (
     <section
       aria-label="Vendors con los que hemos trabajado"
@@ -29,17 +36,17 @@ export function VendorsTicker() {
         </p>
       </div>
       <div className="mask-fade-x overflow-hidden py-8">
-        <div className="marquee-track flex w-max items-center gap-16 pr-16">
-          {loop.map((v, i) => (
-            <div
-              key={`${v.name}-${i}`}
-              className="flex shrink-0 items-center gap-3 text-[color:var(--color-text-muted)] transition-colors hover:text-[color:var(--color-accent)]"
-              aria-hidden={i >= vendors.length ? "true" : undefined}
-            >
-              <v.Icon className="h-8 w-auto" />
-              <span className="font-mono text-sm tracking-wide">{v.name}</span>
-            </div>
-          ))}
+        <div className="marquee-track flex w-max">
+          <ul className="flex shrink-0 items-center gap-16 pr-16">
+            {vendors.map((v) => (
+              <VendorItem key={`a-${v.name}`} name={v.name} Icon={v.Icon} />
+            ))}
+          </ul>
+          <ul className="flex shrink-0 items-center gap-16 pr-16" aria-hidden="true">
+            {vendors.map((v) => (
+              <VendorItem key={`b-${v.name}`} name={v.name} Icon={v.Icon} />
+            ))}
+          </ul>
         </div>
       </div>
     </section>
