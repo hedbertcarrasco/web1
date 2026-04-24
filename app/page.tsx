@@ -3,11 +3,10 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Contact } from "@/components/sections/Contact";
 import { Differentiators } from "@/components/sections/Differentiators";
 import { Hero } from "@/components/sections/Hero";
-import { Industries } from "@/components/sections/Industries";
 import { Metrics } from "@/components/sections/Metrics";
-import { Partners } from "@/components/sections/Partners";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Services } from "@/components/sections/Services";
+import { Technologies } from "@/components/sections/Technologies";
 
 export default function HomePage() {
   return (
@@ -19,8 +18,7 @@ export default function HomePage() {
         <Services />
         <Portfolio />
         <Differentiators />
-        <Industries />
-        <Partners />
+        <Technologies />
         <Contact />
       </main>
       <Footer />

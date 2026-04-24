@@ -1,42 +1,42 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
-import { Cable, Cloud, GaugeCircle, ShieldCheck } from "lucide-react";
+import { Cable, Compass, Layers, Users } from "lucide-react";
 
 const pillars = [
   {
     icon: Cable,
-    title: "Expertise multivendor",
-    desc: "Cisco, Juniper, Arista, Huawei, F5, Palo Alto, SD-WAN. Modelamos la heterogeneidad sin atajos.",
+    title: "Experiencia multivendor real",
+    desc: "Fortinet, Palo Alto, IBM, Cortex, AWS, Azure. Sabemos dónde duele cada stack porque los hemos operado en proyectos concretos.",
   },
   {
-    icon: Cloud,
-    title: "Híbrido real",
-    desc: "Observabilidad que abarca on-premise, colocation y cloud pública. Sin puntos ciegos entre WAN, DC y nube.",
+    icon: Layers,
+    title: "Tres capas en una sola conversación",
+    desc: "Red, seguridad y observabilidad se piensan juntas. Evitas el típico pasamanos entre el ingeniero de red, el de firewall y el de monitoreo.",
   },
   {
-    icon: ShieldCheck,
-    title: "Partner IBM",
-    desc: "Certificaciones vigentes en SevOne NPM y SANO, alineados con la roadmap oficial del producto.",
+    icon: Compass,
+    title: "Metodología de preventa técnica",
+    desc: "Discovery, PoV/PoC, HLD, RFP/RFI. Llegas a la decisión con evidencia técnica documentada, no con promesas de brochure.",
   },
   {
-    icon: GaugeCircle,
-    title: "SLA medibles",
-    desc: "Indicadores NetOps claros (MTTD, MTTR, disponibilidad), reportados mensualmente al negocio.",
+    icon: Users,
+    title: "Trato directo",
+    desc: "Consultoría boutique: hablas con el ingeniero que diseña, no con capas intermedias. Priorizamos pocos proyectos bien hechos.",
   },
 ];
 
 export function Differentiators() {
   return (
     <Section
-      id="diferenciadores"
-      eyebrow="Por qué Lumynar"
+      id="enfoque"
+      eyebrow="Enfoque"
       title={
         <>
-          No vendemos herramientas. Operamos{" "}
-          <span className="text-[color:var(--color-accent)]">disponibilidad</span>.
+          No somos una agencia.{" "}
+          <span className="text-[color:var(--color-accent)]">Somos ingeniería aplicada.</span>
         </>
       }
-      description="Cuatro pilares que explican por qué grandes operadores confían su red en nosotros."
+      description="Cuatro principios que guían cómo abordamos cada proyecto de redes y seguridad."
     >
       <div className="grid gap-4 md:grid-cols-2">
         {pillars.map(({ icon: Icon, title, desc }) => (
