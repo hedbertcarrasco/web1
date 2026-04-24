@@ -7,6 +7,7 @@ import { Metrics } from "@/components/sections/Metrics";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Services } from "@/components/sections/Services";
 import { Technologies } from "@/components/sections/Technologies";
+import { VendorsTicker } from "@/components/sections/VendorsTicker";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <main className="relative">
         <Hero />
         <Metrics />
+        <VendorsTicker />
         <Services />
         <Portfolio />
         <Differentiators />
