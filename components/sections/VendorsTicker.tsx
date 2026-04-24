@@ -1,6 +1,6 @@
+import { AwsLogo, AzureLogo, IbmLogo } from "@/components/brand/VendorLogos";
 import type { ComponentType } from "react";
 import { SiCisco, SiFortinet, SiPaloaltonetworks, SiVmware } from "react-icons/si";
-import { AwsLogo, AzureLogo, IbmLogo } from "@/components/brand/VendorLogos";
 
 type IconProps = { className?: string };
 type Vendor = { name: string; Icon: ComponentType<IconProps> };
@@ -25,6 +25,11 @@ function VendorItem({ name, Icon }: Vendor) {
 }
 
 export function VendorsTicker() {
+  // Each ul repeats the vendor list 3 times so a single copy is wide
+  // enough to span any realistic viewport. Two identical uls side by
+  // side then translate by -50% for a seamless loop.
+  const innerCopies = [0, 1, 2];
+
   return (
     <section
       aria-label="Vendors con los que hemos trabajado"
@@ -38,14 +43,18 @@ export function VendorsTicker() {
       <div className="mask-fade-x overflow-hidden py-8">
         <div className="marquee-track flex w-max">
           <ul className="flex shrink-0 items-center gap-16 pr-16">
-            {vendors.map((v) => (
-              <VendorItem key={`a-${v.name}`} name={v.name} Icon={v.Icon} />
-            ))}
+            {innerCopies.flatMap((c) =>
+              vendors.map((v) => (
+                <VendorItem key={`a-${c}-${v.name}`} name={v.name} Icon={v.Icon} />
+              )),
+            )}
           </ul>
           <ul className="flex shrink-0 items-center gap-16 pr-16" aria-hidden="true">
-            {vendors.map((v) => (
-              <VendorItem key={`b-${v.name}`} name={v.name} Icon={v.Icon} />
-            ))}
+            {innerCopies.flatMap((c) =>
+              vendors.map((v) => (
+                <VendorItem key={`b-${c}-${v.name}`} name={v.name} Icon={v.Icon} />
+              )),
+            )}
           </ul>
         </div>
       </div>
