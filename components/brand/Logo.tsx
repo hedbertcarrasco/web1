@@ -20,9 +20,7 @@ export function Logo({ className, withWordmark = true }: Props) {
         <circle cx="16" cy="16" r="2" fill="#0A0E1A" />
       </svg>
       {withWordmark && (
-        <span className="font-sans text-lg font-semibold tracking-tight">
-          Lumynar<span className="text-[color:var(--color-accent)]">.</span>
-        </span>
+        <span className="font-sans text-lg font-semibold tracking-tight">Lumynar</span>
       )}
     </div>
   );

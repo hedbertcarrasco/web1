@@ -45,21 +45,6 @@ export function Contact() {
                   <ArrowUpRight className="ml-auto h-4 w-4" />
                 </a>
               </Button>
-
-              <dl className="mt-4 grid grid-cols-2 gap-4 border-t border-[color:var(--color-border)] pt-6 text-sm">
-                <div>
-                  <dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-[color:var(--color-text-muted)]">
-                    Ubicación
-                  </dt>
-                  <dd className="mt-1.5">{site.address}</dd>
-                </div>
-                <div>
-                  <dt className="font-mono text-[11px] uppercase tracking-[0.2em] text-[color:var(--color-text-muted)]">
-                    Modalidad
-                  </dt>
-                  <dd className="mt-1.5">Remoto · Presencial en Santiago</dd>
-                </div>
-              </dl>
             </div>
           </div>
         </div>
